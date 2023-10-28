@@ -48,8 +48,6 @@ jobs:
       run: sudo npm install -g newman-reporter-htmlextra
         
     - name: Test-Integration
-      run: newman run TechChallenge2.postman_collection.json -e TechChallenge2.postman_environment.json --reporters cli, -r htmlextra --reporter-htmlextra-export ../index.html
-      working-directory: ./TechChallenge2.IntegrationTest
-
+      run: newman run ./TechChallenge2.IntegrationTest/TechChallenge2.postman_collection.json -e ./TechChallenge2.IntegrationTest/TechChallenge2.postman_environment.json --reporters cli, -r htmlextra --reporter-htmlextra-export ./index.html
     
 
