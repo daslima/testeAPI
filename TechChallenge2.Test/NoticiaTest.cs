@@ -1,16 +1,13 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using TechChallenge2.Test.Services;
 using Xunit;
 
 namespace TechChallenge2.Test
 {
-    public class ContextTest
+    public class NoticiaTest
     {
         [Fact]
-        public void TestaDataContextComSqlServer()
+        public void TestaBuscarNoticias()
         {
             //Arrange
             NoticiaRepository Noticia = new NoticiaRepository();
